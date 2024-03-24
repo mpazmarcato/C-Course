@@ -231,30 +231,119 @@
 // }
 
 // Conditional Operator
-#include <iostream>
+// #include <iostream>
 
-using namespace std;
+// using namespace std;
 
-int main() {
+// int main() {
 
-    // int num {};
-    // cout << "Enter an integer: ";
-    // cin >> num;
+//     // int num {};
+//     // cout << "Enter an integer: ";
+//     // cin >> num;
 
-    // cout << num << " is " << ((num % 2 == 0) ? "even" : "odd") << endl;
+//     // cout << num << " is " << ((num % 2 == 0) ? "even" : "odd") << endl;
 
 
-    int num1{}, num2{};
-    cout << "Enter two integers separated by space: ";
-    cin >> num1 >> num2;
+//     int num1{}, num2{};
+//     cout << "Enter two integers separated by space: ";
+//     cin >> num1 >> num2;
 
-    if (num1 != num2){
-        cout << "Largest: " << ((num1 > num2) ? num1 : num2) << endl;
-        cout << "Smallest: " << ((num1 < num2) ? num1 : num2) << endl;
-    } else {
-        cout << "The numbers are the same" << endl;
-    }
+//     if (num1 != num2){
+//         cout << "Largest: " << ((num1 > num2) ? num1 : num2) << endl;
+//         cout << "Smallest: " << ((num1 < num2) ? num1 : num2) << endl;
+//     } else {
+//         cout << "The numbers are the same" << endl;
+//     }
 
-    cout  << endl;
-    return 0;
-}
+//     cout  << endl;
+//     return 0;
+// }
+
+// // For Loop
+// #include <iostream>
+// #include <vector>
+
+// using namespace std;
+
+// int main() {
+//     for (int i{1} ; i <= 10 ; ++i)
+//         cout << i << endl;
+
+//    for (int i{1} ; i <=10 ; i+=2)
+//        cout << i << endl;
+
+//    for (int i {10}; i > 0; --i)
+//        cout << i << endl;
+//    cout << "Blastoff!" << endl;
+
+//    for (int i{10}; i<=100; i+=10) {
+//        if (i % 15 == 0) 
+//            cout << i << endl;
+//    }
+
+//    for (int i{1}, j{5} ; i<=5 ; ++i, ++j)
+//        cout << i << " + " << j << " = " << (i+j) << endl;
+
+//    for ( int i{1}; i<=100; ++i) {
+//        cout << i;
+//        if (i % 5 == 0)
+//            cout << endl;
+//        else 
+//            cout << " ";
+//    }
+
+//  for ( int i{1}; i<=100; ++i) {
+//        cout << i << ( (i % 10 ==0) ? "\n" : " ");
+//    }
+//       
+
+//    vector<int> nums {10,20,30,40,50};
+//    for (unsigned i{0}; i < nums.size(); ++i)
+//        cout << nums[i] << endl;
+    
+//     cout << endl;
+//     return 0;
+// }
+
+// Range-based For Loop
+// #include <iostream>
+// #include <vector>
+// #include <iomanip>
+
+// using namespace std;
+
+// int main() {
+   
+//     // int scores[] {10, 20, 30};
+//     // for (auto score : scores)
+//     //     cout << score << endl;
+
+//     // vector<double> temperature {87.9, 77.9, 80.0, 72.5};
+//     // double average_temp {};
+//     // double total {};
+
+//     // for (auto temp : temperature)
+//     //     total += temp;
+
+//     // if (temperature.size() != 0)
+//     //     average_temp = total / temperature.size();
+    
+//     // cout << fixed << setprecision(1);
+//     // cout << "Average temp is " << average_temp << endl;
+
+//     // for (auto val : {1, 2, 3, 4})
+//     //     cout << val << endl;
+
+//     // for (auto c : "This is a test")
+//     //     if (c != ' ')
+//     //         cout << c;
+
+//     for (auto c: "This is a test")
+//         if (c == ' ')
+//             cout << "\t";
+//         else
+//             cout << c;
+            
+        
+//     return 0;
+// }
