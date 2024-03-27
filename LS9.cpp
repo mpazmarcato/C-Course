@@ -398,44 +398,89 @@
 
 //Do-while
 //Simple Menu example
+// #include <iostream>
+
+// using namespace std;
+
+// int main() {
+
+//     char selection{};
+//     do {
+//         cout << "\n-----------------------" << endl;
+//         cout << "1. Do this" << endl;
+//         cout << "2. Do that" << endl;
+//         cout << "3. Do something else" << endl;
+//         cout << "Q. Quit" << endl;
+//         cout << "\nEnter your selection: ";
+
+//         cin >> selection;
+
+//         switch (selection)
+//         {
+//         case '1':
+//             cout << "You code 1 - doing this" << endl;
+//             break;
+//         case '2':
+//             cout << "You code 2 - doing that" << endl;
+//             break;
+//         case '3':
+//             cout << "You code 3 - doing something else" << endl;
+//             break;
+//         case 'Q':
+//         case 'q':
+//             cout << "Goodbye!" << endl;
+//             break;
+//         default:
+//             cout << "Try again" << endl;
+//             break;
+//         }
+
+//     } while (selection != 'q' && selection != 'Q');
+
+//     cout  << endl;
+//     return 0;
+// }
+
+//Nested Loops
+//Nested Loops - Histogram 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main() {
 
-    char selection{};
-    do {
-        cout << "\n-----------------------" << endl;
-        cout << "1. Do this" << endl;
-        cout << "2. Do that" << endl;
-        cout << "3. Do something else" << endl;
-        cout << "Q. Quit" << endl;
-        cout << "\nEnter your selection: ";
+    // for(int num1{1}; num1 <= 10; ++num1){
+    //     for(int num2{1}; num2 <= 10; ++num2){
+    //         cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+    //     }
+    //     cout << "************" << endl;
+    // }
 
-        cin >> selection;
+    int numItens{};
+    cout << "How many data itens do you have?";
+    cin >> numItens;
+    
+    vector<int> data {};
 
-        switch (selection)
-        {
-        case '1':
-            cout << "You code 1 - doing this" << endl;
-            break;
-        case '2':
-            cout << "You code 2 - doing that" << endl;
-            break;
-        case '3':
-            cout << "You code 3 - doing something else" << endl;
-            break;
-        case 'Q':
-        case 'q':
-            cout << "Goodbye!" << endl;
-            break;
-        default:
-            cout << "Try again" << endl;
-            break;
+    for(int i{1}; i <= numItens; ++i){
+        int dataItem{};
+        cout << "Enter data item " << i << ": ";
+        cin >> dataItem;
+        data.push_back(dataItem);
+    }
+
+    cout << "\nDisplaying Histogram" << endl;
+
+    for(auto val : data){
+        for (int i{1}; i <= val; ++i){
+            if (i % 5 == 0)
+                cout << "*";
+            else
+                cout << "-";
         }
-
-    } while (selection != 'q' && selection != 'Q');
+        cout << endl;
+    }
 
     cout  << endl;
     return 0;
